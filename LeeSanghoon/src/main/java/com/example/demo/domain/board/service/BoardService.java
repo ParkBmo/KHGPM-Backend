@@ -6,7 +6,8 @@ import com.example.demo.domain.board.entity.Board;
 import java.util.List;
 
 public interface BoardService {
-    public void register(BoardRequest boardRequest);
+    //public void register(BoardRequest boardRequest);
+    public Board register(BoardRequest boardRequest);
 
     List<Board> list();
 
@@ -19,4 +20,6 @@ public interface BoardService {
     List<Board> bigMisstake(Long boardId, BoardRequest boardRequest);
 
     Long getCount();
+
+    Long getLastEntityId();
 }
