@@ -1,4 +1,4 @@
-package com.example.demo.domain.forTest.entity;
+package com.example.demo.domain.forTest.board.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,6 +20,10 @@ public class Comment {
     private TestBoard testBoard;
 
     public Comment (String content) {
+        this.content = content;
+    }
+
+    public void changeContent (String content) {
         this.content = content;
     }
 }
