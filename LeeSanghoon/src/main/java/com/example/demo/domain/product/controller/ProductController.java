@@ -16,7 +16,6 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/product")
-@CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
 public class ProductController {
 
     final private ProductService productService;
@@ -68,5 +67,12 @@ public class ProductController {
         log.info("readProductImageResource(): " + productId);
 
         return productService.findProductImage(productId);
+    }
+
+    @GetMapping("/all")
+    public List<AllProductResponse> allProductList () {
+        log.info("allProductList()");
+
+        return productService.all();
     }
 }
