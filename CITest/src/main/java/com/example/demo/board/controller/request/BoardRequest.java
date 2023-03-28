@@ -1,6 +1,6 @@
-package com.example.demo.domain.board.controller.request;
+package com.example.demo.board.controller.request;
 
-import com.example.demo.domain.board.entity.Board;
+import com.example.demo.board.entity.Board;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
